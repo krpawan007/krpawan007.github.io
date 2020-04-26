@@ -77,7 +77,7 @@
 #home::before{
     content: "";
     /* background-color: #ffa41b; */
-    background: url('/Images/computer2.jpg') no-repeat center center/cover;
+    background: url('/Quest-Edu/Images/computer2.jpg') no-repeat center center/cover;
     position: absolute;
     top: 0px;
     left: 0px;
