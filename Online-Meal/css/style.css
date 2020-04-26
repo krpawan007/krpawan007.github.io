@@ -1,0 +1,179 @@
+ /* Fonts */
+ @import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&family=Rubik:wght@500&display=swap');
+ 
+ /* CSS Reset  */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#navbar{
+    display: flex;
+    position: relative;
+}
+
+#navbar ul{
+    display: flex;
+    padding: 1px 50px;
+    align-items: center;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: 'Baloo Tamma 2', cursive;
+}
+
+#navbar ul li a{
+    /* padding to hovering */
+    padding: 3px 22px;
+    color: white;
+    display: block;
+    border-radius: 20px;
+    /* Underline wipes out */
+    text-decoration: none;  
+    
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+
+}
+
+#navbar::before{
+    content: "";
+    background-color:black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+
+/* Logo & Images */
+#logo{
+    height: 60px;
+    margin: 6px 1px;
+}
+
+/* Link Styling */
+#logo img{
+    
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: visible;
+    margin: 1px 10px;
+}
+
+/* Home section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 10px ;
+    justify-content: center;
+    align-items: center;
+    height: 510px;
+}
+
+#home::before{
+    content: "";
+    background:url('/logo2.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 98%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    /* background-color:black ; */
+    font-family: 'Baloo Tamma 2', cursive;
+}
+
+#home p{
+    color: white;
+    font-size: 1.2rem;
+}
+
+ /* Services section  */
+
+   /* Utility Section  */
+
+.h-primary{
+    font-size: 3rem;
+    padding: 10px;
+    font-family: 'Baloo Tamma 2', cursive;
+}
+
+.h-secondary{
+    font-size: 2rem;
+    padding: 10px;
+    font-family: 'Baloo Tamma 2', cursive;
+}
+
+.btn{
+    margin: 1rem;
+    color: white;
+    background-color: red;
+    padding: 0.4rem 1rem;
+    font-size: 1.2rem;
+    border: 0;
+    white-space: normal;
+    word-break: break-word;
+    cursor: pointer;
+    border-radius: 10rem;
+    display: inline-block;
+    font-family: 'Baloo Tamma 2', cursive;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.services-container{
+    /* height: 300px; */
+    margin: 60px 10px;
+    /* padding: 60px 100px; */
+}
+
+.center{
+    text-align: center;
+    /* color: white; */
+    /* background-color: black; */
+}
+
+#services{
+    display: flex;
+    /* margin: 30px; */
+}
+#services .box{
+    font-family: 'Baloo Tamma 2', cursive;
+    border: 2px solid red;
+    margin: 1px 6px;
+    padding:  6px;
+    border-radius: 28px;
+    background-color: aliceblue;
+}
+#services .box img{
+    /* height:200px;
+    width: 200px; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#services .box p{
+    font-family: 'Baloo Tamma 2', cursive;
+    font-size: .8rem;
+    text-align: center;
+    justify-content: center;
+}
